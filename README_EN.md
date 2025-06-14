@@ -4,38 +4,38 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/thanhdo1110/CTDOTouchIndicatorOverlay/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://github.com/thanhdo1110/CTDOTouchIndicatorOverlay)
 
-[English](README_EN.md) | **Tiếng Việt**
+**English** | [Tiếng Việt](README.md)
 
-## 🌟 Tính Năng
+## 🌟 Features
 
-- Hiển thị chỉ báo chạm cho ứng dụng iOS
-- Tùy chỉnh kích thước và màu sắc chỉ báo
-- Nhiều chế độ hiển thị
-- Hiệu ứng mượt mà và gợn sóng
-- Tương thích với ghi màn hình
-- Dễ dàng tích hợp vào dự án hiện có
+- Touch indicator overlay for iOS applications
+- Customizable indicator size and color
+- Multiple visibility modes
+- Smooth animations and ripple effects
+- Screen recording compatibility
+- Easy integration with existing projects
 
 ## 📱 Demo
 
 ![Demo](demo.gif)
 
-## 🔧 Cài Đặt
+## 🔧 Installation
 
-### Sử Dụng Theos
+### Using Theos
 
-1. Thêm vào file `control`:
+1. Add the following to your `control` file:
 ```
 Depends: mobilesubstrate (>= 0.9.5000)
 ```
 
-2. Thêm vào file `Makefile`:
+2. Add the following to your `Makefile`:
 ```makefile
 CTDOTouchIndicatorOverlay_FILES = Tweak.xm
 CTDOTouchIndicatorOverlay_CFLAGS = -fobjc-arc
 CTDOTouchIndicatorOverlay_FRAMEWORKS = UIKit
 ```
 
-3. Tạo file `Tweak.xm`:
+3. Create a `Tweak.xm` file:
 ```objc
 #import "CTDOTouchIndicatorOverlay.h"
 
@@ -63,50 +63,50 @@ CTDOTouchIndicatorOverlay_FRAMEWORKS = UIKit
 }
 
 %end
+
 ```
 
-## 🛠️ Sử Dụng
+## 🛠️ Usage
 
-### Thiết Lập Cơ Bản
+### Basic Setup
 ```objc
-// Bật chỉ báo chạm
+// Enable the touch indicator
 [CTDOTouchIndicatorOverlay setEnabled:YES];
 
-// Đặt kích thước chỉ báo
+// Set indicator size
 [CTDOTouchIndicatorOverlay setIndicatorSize:20.0];
 
-// Đặt màu chỉ báo
+// Set indicator color
 [CTDOTouchIndicatorOverlay setIndicatorRGBColorWithRed:0.6196 green:0.6196 blue:0.6196 alpha:1.0];
 
-// Đặt chế độ hiển thị (0: Luôn hiển thị, 1: Chỉ hiển thị khi ghi màn hình)
+// Set visibility mode (0: Always visible, 1: Visible only during screen recording)
 [CTDOTouchIndicatorOverlay setVisibilityMode:0];
 ```
 
-## 📝 Tài Liệu API
+## 📝 API Reference
 
-### Các Phương Thức
+### Methods
 
-| Phương Thức | Mô Tả |
-|------------|-------|
-| `setEnabled:` | Bật/tắt chỉ báo chạm |
-| `setIndicatorSize:` | Đặt kích thước chỉ báo |
-| `setIndicatorColor:` | Đặt màu chỉ báo |
-| `setIndicatorRGBColorWithRed:green:blue:alpha:` | Đặt màu RGB cho chỉ báo |
-| `setVisibilityMode:` | Đặt chế độ hiển thị |
+| Method | Description |
+|--------|-------------|
+| `setEnabled:` | Enable/disable the touch indicator |
+| `setIndicatorSize:` | Set the size of the touch indicator |
+| `setIndicatorColor:` | Set the color of the touch indicator |
+| `setIndicatorRGBColorWithRed:green:blue:alpha:` | Set the RGB color of the touch indicator |
+| `setVisibilityMode:` | Set the visibility mode |
 
-## 👥 Tác Giả
+## 👥 Authors
 
-- **Đỗ Trung Thành (dothanh1110)** - *Công việc ban đầu* - [GitHub](https://github.com/thanhdo1110)
-- **CTDO Team** - *Phát triển và Hỗ trợ*
+- **Đỗ Trung Thành (dothanh1110)** - *Initial work* - [GitHub](https://github.com/thanhdo1110)
+- **CTDO Team** - *Development and Support*
 
-## 📞 Liên Hệ
+## 📞 Contact
 
 - Telegram: [@ctdotech](https://t.me/ctdotech)
 - Telegram: [@dothanh1110](https://t.me/dothanh1110)
 - YouTube: [thanhdo1110](https://youtube.com/thanhdo1110)
 - Website: [ctdo.net](https://ctdo.net)
 
-## 📄 Bản Quyền
+## 📄 Copyright
 
-© 2025 CTDO Team. All rights reserved.
-
+© 2025 CTDO Team. All rights reserved. 
